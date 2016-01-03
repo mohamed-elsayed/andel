@@ -8,3 +8,8 @@ student.o: student.cpp student.h
 Source.o: student.h Source.cpp
 	gcc -c student.h Source.cpp
 
+
+.PHONY  : clean
+
+clean   :
+	rm *o  *gch output
